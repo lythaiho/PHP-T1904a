@@ -208,11 +208,16 @@ $product = [
                 <div class="price-product"><?php echo $p['info']['price'];?>đ</div>
                 <div class="vote-rate-product">
                     <div class="vote-product">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star"></span>
+                        <?php
+                        $vote= $p['info']['vote'];
+                        for ($i = 0; $i < $vote; $i++) {?>
+                           <span class="fa fa-star checked"></span>
+                        <?php }
+                        for($j=0;$j<(5-$vote);$j++ ){?>
+                            <span class="fa fa-star"></span>
+                        <?php }
+                        ?>
+
                     </div>
                     <div class="rate-product">(<?php echo $p['info']['rate'];?>đánh giá)</div>
                 </div>
