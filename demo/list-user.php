@@ -64,7 +64,7 @@ if ($resulf->num_rows > 0) {
                 <td><?php echo $u ["age"];?></td>
                 <td><?php echo $u ["address"];?></td>
                 <td><?php echo $u ["telephone"];?></td>
-            </tr    >
+            </tr>
             <?php endforeach; ?>
             </tbody>
 
