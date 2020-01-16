@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../import/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../import/css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="../import/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../import/css/datatables.min.css" type="text/css">
     <link rel="stylesheet" href="../import/css/style.css" type="text/css">
     <title>Create account</title>
 </head>
@@ -77,4 +79,6 @@
 <script src="../import/js/bootstrap.min.js"></script>
 <script src="../import/js/all.min.js"></script>
 <script src="../import/js/popper.min.js"></script>
+<script src="../import/js/jquery-3.4.1.min.js"></script>
+<script src="../import/js/datatables.min.js"></script>
 </html>
