@@ -29,7 +29,7 @@
 
                     <?php require_once('message.php');?>
                     <!--form login start-->
-                    <form action="?route=postlogin" method="post" class="form-login rounded border py-4">
+                    <form action="?route=listuser" method="post" class="form-login rounded border py-4">
 
                         <!--form group start-->
                         <div class="form-group pt-2">

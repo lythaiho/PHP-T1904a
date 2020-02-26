@@ -7,11 +7,11 @@ class Controller
     public function invoke(){
         if($_GET['route']== "login" ){
             $this->login();
-        }elseif ($_GET['route']="postlogin"){
+        }elseif ($_GET['route']=="postlogin"){
             $this->postlogin();
-        }elseif ($_GET['route']="register"){
+        }elseif ($_GET['route']=="register"){
             $this->register();
-        }elseif ($_GET['route']="listuser"){
+        }elseif ($_GET['route']=="listuser"){
             $this->listuser();
         }else{
             echo "404 Not Found";
