@@ -1,5 +1,4 @@
 <?php
-session_start();
 $email=$_POST["email"];
 $password= $_POST["password"];
 
@@ -21,15 +20,17 @@ $resulf = $conn->query($sql);
 if ($resulf->num_rows > 0) {
     echo "Login successfully";
     $user= null;
+
     while ($row = $resulf->fetch_assoc()) {
         $user = $row;
     }
     $_SESSION["user"] = $user;
-    header("Location: /php/index.php");
+    header("Location: ?route=listuser");
+    die("done");
 } else {
     $_SESSION["message"]=[
         'message'=>"Email or password is wrong",
         'type'=>'error'
     ];
-    header("Location: login.php");
+    header("Location: ?route=login");
 }

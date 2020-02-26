@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,11 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../import/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../import/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="../import/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="../import/css/datatables.min.css" type="text/css">
-    <link rel="stylesheet" href="../import/css/style.css" type="text/css">
+    <link rel="stylesheet" href="function/views/import/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="function/views/import/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="function/views/import/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="function/views/import/css/datatables.min.css" type="text/css">
+    <link rel="stylesheet" href="function/views/import/css/style.css" type="text/css">
     <title>Login account</title>
 </head>
 <body>
@@ -28,9 +27,9 @@
 
                     <div class="text-24 text-center pb-4">Đăng nhập PHP</div>
 
-                    <?php require_once ('message.php');?>
+                    <?php require_once('message.php');?>
                     <!--form login start-->
-                    <form action="postLogin.php" method="post" class="form-login rounded border py-4">
+                    <form action="?route=postlogin" method="post" class="form-login rounded border py-4">
 
                         <!--form group start-->
                         <div class="form-group pt-2">
@@ -61,7 +60,7 @@
                                 </a>
                             </div>
                             <div class="text-right">
-                                <a class="text-primary float-right" href="./create-account.php">
+                                <a class="text-primary float-right" href="?route=register">
                                     Tạo tài khoản mới
                                 </a>
                             </div>
@@ -80,9 +79,9 @@
 </article>
 <!--article end-->
 </body>
-<script src="../import/js/bootstrap.min.js"></script>
-<script src="../import/js/all.min.js"></script>
-<script src="../import/js/popper.min.js"></script>
-<script src="../import/js/jquery-3.4.1.min.js"></script>
-<script src="../import/js/datatables.min.js"></script>
+<script src="function/views/import/js/bootstrap.min.js"></script>
+<script src="function/views/import/js/all.min.js"></script>
+<script src="function/views/import/js/popper.min.js"></script>
+<script src="function/views/import/js/jquery-3.4.1.min.js"></script>
+<script src="function/views/import/js/datatables.min.js"></script>
 </html>
